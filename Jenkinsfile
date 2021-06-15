@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Stage1') {
       steps {
-        echo 'This is $Owner Pipeline'
+        sh 'echo "Owner of $BUILD_NUMBER Build is $Owner"'
       }
     }
 
